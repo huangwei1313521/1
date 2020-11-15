@@ -309,6 +309,25 @@ text--decoration:underline/line-through/overline分别是下滑、中划、上�
 >
 >如果在表的内容中控制空格之间的边框，应使用td和th元素的填充属性。
 
+### 盒子模型
+
+盒子模型由内容区、填充、边框、空白边构成。
+
+所有HTML元素可以看作盒子，在CSS中，"box model"这一术语是用来设计和布局时使用，封装周围的HTML元素，它包括：边距，边框，填充，和实际内容。
+
+盒子模型允许我们在其它元素和周围元素边框之间的空间放置元素。
+
+在 **标准盒子模型**中，**width 和 height 指的是内容区域**的宽度和高度。增加内边距、边框和外边距不会影响内容区域的尺寸，但是会增加元素框的总尺寸。
+
+**IE盒子模型**中，**width 和 height 指的是内容区域+border+padding**的宽度和高度。
+
+border就是边框。边框有三个要素：像素（粗细）、线型、颜色。
+
+border属性是能够被拆开的，有两大种拆开的方式：
+
+>* 按方向拆开：border-top、border-right、border-bottom、border-left。
+>* 按三要素拆开：border-width、border-style、border-color。（一个border属性是由三个小属性综合而成的）
+
 ## JavaScript
 
 在 HTML 中，JavaScript 代码必须位于 \<script> 与\</script> 标签之间。javaScript *函数*是一种 JavaScript 代码块，它可以在调用时被执行。例如，当发生事件时调用函数，比如当用户**点击按钮**时。
